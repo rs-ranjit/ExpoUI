@@ -5,6 +5,10 @@ import BookingDetails from "./Components/BookingDetails";
 import PatientInfo from "./Components/PatientInfo";
 import ProblemDetails from "./Components/ProblemDetails";
 import ActionButtons from "./Components/ActionButtons";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 
 const App = () => {
   return (
@@ -30,10 +34,10 @@ const App = () => {
           styles: {
             backgroundColor: "lavender",
             color: "purple",
-            width: 80,
+            width: wp("18%"),
             paddingLeft: "none",
-            marginLeft: 20,
-            borderRadius: 5,
+            marginLeft: wp("10"),
+            borderRadius: wp("1"),
           },
         }}
       />

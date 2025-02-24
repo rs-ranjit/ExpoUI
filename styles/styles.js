@@ -1,4 +1,8 @@
 import { StyleSheet } from "react-native";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 
 const styles = StyleSheet.create({
   main: {
@@ -7,57 +11,56 @@ const styles = StyleSheet.create({
   },
   topContainer: {
     backgroundColor: "white",
-    height: 70,
+    height: hp("7"),
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 20,
+    paddingHorizontal: wp("3"),
   },
   image: {
-    width: 50,
-    height: 20,
+    width: wp("10"),
+    height: hp("2"),
   },
   topText: {
     fontWeight: "bold",
-    fontSize: 16,
+    fontSize: wp("4"),
     paddingLeft: 100,
   },
   container: {
     backgroundColor: "white",
-    margin: 13,
-    padding: 13,
+    margin: wp("3"),
+    padding: wp("3"),
   },
   containerBox: {
     flexDirection: "row",
   },
   textRight: {
-    paddingLeft: 20,
-    fontSize: 14,
-    paddingBottom: 7,
+    paddingLeft: wp("11"),
+    fontSize: wp("3.4"),
+    paddingBottom: wp("1.6"),
   },
   textLeft: {
-    paddingLeft: 10,
-    paddingBottom: 7,
+    paddingLeft: wp("3"),
+    paddingBottom: wp("1.6"),
     color: "grey",
-    fontSize: 14,
+    fontSize: wp("3.4"),
   },
   textTitle: {
     fontWeight: "bold",
-    fontSize: 14,
-    marginBottom: 16,
-    paddingLeft: 10,
+    fontSize: wp("3.4"),
+    marginBottom: wp("5"),
+    paddingLeft: wp("3"),
   },
   button: {
     borderWidth: 1,
-    width: 120,
+    width: wp("27"),
     justifyContent: "center",
-    height: 50,
+    height: hp("6"),
     alignItems: "center",
     backgroundColor: "white",
     borderRadius: 5,
     borderColor: "#f5f5f5",
     elevation: 1,
-    marginBottom: 30,
-    marginTop: 30,
+    marginTop: hp("2"),
   },
   lastContainer: {
     flexDirection: "row",
